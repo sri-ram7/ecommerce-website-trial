@@ -110,7 +110,7 @@ const Addproduct = () => {
     let formData = new FormData();
     formData.append('product', image);
 
-    await fetch("http://localhost:4000/upload", {
+    await fetch("https://ecommerce-website-trial-backend.onrender.com/upload", {
       method: 'POST',
       headers: {
         Accept: 'application/json',
@@ -124,7 +124,7 @@ const Addproduct = () => {
       product.image = responseData.image_url;
       console.log(product);
       // You can now send `product` to a backend API for saving
-      await fetch("http://localhost:4000/addproduct", {
+      await fetch("https://ecommerce-website-trial-backend.onrender.com/addproduct", {
         method: "POST",
         headers:{
             Accpet:'application/josn',
