@@ -314,10 +314,22 @@ const path = require("path");
 const cors = require("cors");
 
 // Use CORS — allow only your deployed frontend domain.
+const allowedOrigins = [
+  "https://ecommerce-website-trial-frontend.onrender.com",
+  "https://ecommerce-website-trial-admin.onrender.com"
+];
+
 app.use(cors({
-  origin: "https://ecommerce-website-trial-frontend.onrender.com, https://ecommerce-website-trial-admin.onrender.com",
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
+
 
 app.use(express.json());
 
