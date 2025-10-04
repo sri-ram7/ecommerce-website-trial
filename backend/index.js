@@ -315,7 +315,7 @@ const cors = require("cors");
 
 // Use CORS — allow only your deployed frontend domain.
 app.use(cors({
-  origin: "https://ecommerce-website-trial-frontend.onrender.com",
+  origin: "https://ecommerce-website-trial-frontend.onrender.com, https://ecommerce-website-trial-admin.onrender.com",
   credentials: true
 }));
 
