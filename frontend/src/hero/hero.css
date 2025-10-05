@@ -1,10 +1,16 @@
 .hero {
     height: 100vh;
-    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    background: linear-gradient(180deg,#000000,#aaaaaa22 60%);
     display: flex;
     align-items: center;
+    background-color: #090909;
 }
 
+.hero-men{
+    height: 700px;
+    width: 500px;
+    margin-bottom: 50px;
+}
 
 .hero-left {
     flex: 1;
@@ -17,13 +23,13 @@
 }
 
 .hero-left h2 {
-    color: #090909;
+    color: whitesmoke;
     font-size: 26px;
     font-weight: 600;
 }
 
 .hero-left p {
-    color: #171717;
+    color: whitesmoke;
     font-size: 100px;
     font-weight: 700;
 }
@@ -54,10 +60,15 @@
 }
 
 .hero-right{
-    flex: 1;
     display: flex;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
+    height: 650px;
+    width: 650px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+    background-color: rgb(214, 213, 213);
+    border-radius: 50% 50% 50% 50%;
 }
 @media(max-width: 1280px){
     .hero-left{
