@@ -6,6 +6,12 @@
     border-radius: 8px;
 }
 
+.light{
+    box-shadow: -1px 0px 41px 4px rgba(48,47,47,0.75);
+-webkit-box-shadow: -1px 0px 41px 4px rgba(48,47,47,0.75);
+-moz-box-shadow: -1px 0px 41px 4px rgba(48,47,47,0.75);
+}
+
 .item p{
     margin: 6px 0px;
 }
