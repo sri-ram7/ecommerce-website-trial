@@ -1,6 +1,8 @@
 .productdisplay{
     display: flex;
-    margin: 0px 170px;
+    margin: 0px 50px;
+    padding-bottom: 40px;
+    background-color: black;
 }
 
 .productdisplay-left{
@@ -8,27 +10,36 @@
     gap: 17px;
 }
 
+.photos{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
 .productdisplay-img-list{
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-top: 30px;
 }
 
 .productdisplay-img-list img{
     height: 163px;
 }
 .productdisplay-main-img{
-    width: 586px;
-    height: 700px;
+    width: 646px;
+    height: 760px;
+    padding-top: 50px;
+    
 }
 .productdisplay-right{
     margin-left: 70px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-top: 30px;
 }
 .productdisplay-right h1{
-    color: #3d3d3d;
+    color: whitesmoke;
     font-size: 40px;
     font-weight: 700;
 }
@@ -37,12 +48,12 @@
     align-items: center;
     margin-top: 13px;
     gap: 5px;
-    color: #1c1c1c;
+    color: whitesmoke;
     font-size: 16px;
 }
 .productdisplay-right-prices{
     display: flex;
-    margin: 40px 0px;
+    margin: 0px 0px;
     gap: 30px;
     font-size: 24px;
     font-weight: 700;
@@ -52,11 +63,11 @@
     text-decoration: line-through;
 }
 .productdisplay-right-price-new{
-    color: #ff4141;
+    color: whitesmoke;
 }
 .productdisplay-right-size h1{
     margin-top: 55px;
-    color: #656565;
+    color: whitesmoke;
     font-size: 20px;
     font-weight: 600;
 }
@@ -64,10 +75,12 @@
     display: flex;
     margin: 30px 0px;
     gap: 20px;
+   
 }
 .productdisplay-right-sizes div{
     padding: 18px 24px;
-    background: #fbfbfb;
+     background-color: black;
+    color: whitesmoke;
     border: 1px solid #ebebeb;
     border-radius: 3px;
     cursor: pointer;
@@ -78,15 +91,23 @@
     width: 200px;
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: whitesmoke;
     background: #FF4141;
     margin-bottom: 40px;
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 30px;
+}
+
+.productdisplay-right button:hover {
+   border:  solid #ff4141;      /* Highlight with a bright red border */
+  box-shadow: 0 0 25px #ff4141;
+   transition:  box-shadow 0.3s ease-in-out;
 }
 .productdisplay-right-category{
-    margin-top: 10px;
+    margin-top: 5px;
+    font-size: 22px;
 }
 .productdisplay-right-category span{
     font-weight: 600;
