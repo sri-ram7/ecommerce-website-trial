@@ -6,7 +6,7 @@
     height: 90vh;
 }
 .relatedproducts h1{
-    color: #171717;
+    color: whitesmoke;
     font-size: 50px;
     font-weight: 600;
 }
@@ -14,10 +14,27 @@
     width: 200px;
     height: 6px;
     border-radius: 10px;
-    background: #252525;
+    background: whitesmoke;
 }
 .relatedproducts-item{
     margin-top: 50px;
     display: flex;
     gap: 30px;
+}
+
+.autoshow{
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
