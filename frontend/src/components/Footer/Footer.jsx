@@ -30,7 +30,6 @@ const Footer = (props) => {
                     <img src={whatsapp_logo} alt="instagram-logo" />
                 </div>
                 <div className="footer-copyright">
-                    <hr />
                     <p>Copyright @ 2023 by Shopper. All rights reserved.</p>
                 </div>
             </div>
