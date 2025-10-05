@@ -4,7 +4,7 @@ import './descriptionbox.css'
 
 const Descriptionbox = (props) => {
     return (
-         <div className='descriptionbox'>
+         <div className='descriptionbox autoshow'>
             <div className="descriptionbox-navigator">
                 <div className="descriptionboc-nav-box">
                     Description
