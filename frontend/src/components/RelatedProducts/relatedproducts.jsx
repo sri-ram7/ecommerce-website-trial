@@ -5,7 +5,7 @@ import Item from '../item/item.jsx';
 
 const Relatedproducts = (props) => {
     return (
-       <div className='relatedproducts'>
+       <div className='relatedproducts autoshow'>
             <h1>Related Products</h1>
             <hr />
             <div className="relatedproducts-item">
