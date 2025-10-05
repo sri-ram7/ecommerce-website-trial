@@ -1,0 +1,30 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+.breadcrum {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 6px; 
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.breadcrum img {
+  width: 15px;
+  height: 20px;
+  margin-top: 5px;
+  padding-top: 5px;
+  object-fit: contain; /* keep arrow crisp */
+  margin: 0 4px; /* small horizontal margin around arrow */
+}
+
+.breadcrum span, .breadcrum a {
+  color: #333;
+  text-decoration: none;
+}
