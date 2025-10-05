@@ -35,15 +35,32 @@
     align-items: center;
     gap: 3px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scaleX(1);
 }
 
-.nav-menu li hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background: #FF4141;
+.nav-menu li:hover{
+    transform: scale(1.1);
 }
+
+.nav-menu li hr {
+   border: none;
+   width: 80%;
+   height: 3px;
+   border-radius: 10px;
+   background: #FF4141;
+   transition: transform 0.3s ease;
+   transform: scaleX(0); /* <<< Add this line */
+   /* Optionally add transform-origin for left-to-right effect */
+   transform-origin: left;
+}
+
+.nav-menu li:hover hr {
+  transform: scaleX(1);
+}
+
+
+
 
 .nav-login-cart{
     display: flex;
@@ -55,20 +72,55 @@
     width: 157px;
     height: 58px;
     outline: none;
-    border: 1px solid #7a7a7a;
+    border: none;
     border-radius: 75px;
-    color: #515151;
+    color: white;
     font-size: 20px;
     font-weight: 500;
-    background: white;
+    background:#ff7700;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scaleX(1);
 }
 
+.nav-login-cart button:hover{
+    transform: scale(1.05);
+    background: #ff7700;
+    color: white;
+}
 .nav-login-cart button:active{
     background: #f3f3f3;
+    color: #ff7700;
 }
 
-.nav-cart-count{ width: 22px; height: 22px; display: flex; justify-content: center; align-items:center; margin-top: -35px; margin-left: -35px; border-radius: 11px; font-size: 14px; background-color: red; color: white; }
+.nav-cart-count{ 
+   width: 22px;
+   height: 22px;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   margin-top: -35px; 
+   margin-left: -35px;
+   border-radius: 11px;
+   font-size: 14px;
+   background-color: red;
+   color: white;
+}
+
+@keyframes bump {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.2); }
+  30% { transform: scale(0.9); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.nav-cart-count.bump {
+  animation: bump 0.4s ease;
+}
+
 
 .nav-dropdown{
     display: none;
