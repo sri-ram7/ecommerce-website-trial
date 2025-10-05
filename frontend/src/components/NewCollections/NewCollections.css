@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background-color: #080808e8;
-    padding-bottom: 100px;
+    background: #1c1c1c;
+    padding-bottom: 50px;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
