@@ -56,7 +56,7 @@
    width: 80%;
    height: 3px;
    border-radius: 10px;
-   background: #FF4141;
+   background: #fac104;
    transition: transform 0.3s ease;
    transform: scaleX(0); /* <<< Add this line */
    /* Optionally add transform-origin for left-to-right effect */
@@ -86,8 +86,9 @@
     color: white;
     font-size: 20px;
     font-weight: 500;
-    background:#ff7700;
+    background: rgb(243, 170, 0);
     font-weight: 500;
+    padding-bottom: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     transition: transform 0.3s ease;
