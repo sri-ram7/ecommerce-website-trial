@@ -3,6 +3,7 @@
 }
 .item img{
     width: 280px;
+    border-radius: 8px;
 }
 
 .item p{
@@ -15,7 +16,7 @@
 }
 
 .item-price-new{
-   color: #374151;
+   color: whitesmoke;
     font-size: 18px;
     font-weight: 600;
 }
