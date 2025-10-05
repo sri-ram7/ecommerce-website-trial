@@ -2,7 +2,7 @@ import React, { useContext, useState, useRef , useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import logo from '../assests/logo.png'; 
-import cart_icon from '../assests/cart_icon.png';
+import cart_icon from '../assests/shopcart.png';
 import nav_dropdown from '../assests/nav_dropdown.png';
 import { ShopContext } from '../../context/ShopContext';
 
@@ -19,7 +19,7 @@ const Navbar = () => {
         dropdownRef.current.classList.toggle('open');
     };
 
-
+//useref is used to keep the rerender not happening ! due to rereder it leads to problems ! 
 
     const handleMenuClick = (menuName) => {
         setMenu(menuName);
@@ -28,7 +28,8 @@ const Navbar = () => {
             menuRef.current.classList.remove('nav-menu-visible');
             dropdownRef.current.classList.remove('open'); 
             
-            
+            //classlist.toogle or .remove it adds and remove the classnames means it adds another classname to the elemnt
+            // here the dropwref and the menuref are used  in different html elements ! when the action is done it is used to add "current"-> means it points to element , and later use the classlist to add the classname!  
         }
     };
 
@@ -61,22 +62,23 @@ const Navbar = () => {
 
             <ul ref={menuRef} className="nav-menu">
                 <li onClick={() => handleMenuClick("shop")}>
-                    <Link to='/' style={{ textDecoration: 'none' }}>Shop</Link>
+                    <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>SHOP</Link>
                     {menu === "shop" ? <hr /> : null}
                 </li>
                 <li onClick={() => handleMenuClick("mens")}>
-                    <Link to='/mens' style={{ textDecoration: 'none' }}>Men</Link>
+                    <Link to='/mens' style={{ textDecoration: 'none', color: 'white' }}>MEN</Link>
                     {menu === "mens" ? <hr /> : null}
                 </li>
                 <li onClick={() => handleMenuClick("women")}>
-                    <Link to='/womens' style={{ textDecoration: 'none' }}>Women</Link>
+                    <Link to='/womens' style={{ textDecoration: 'none', color: 'white' }}>WOMEN</Link>
                     {menu === "women" ? <hr /> : null}
                 </li>
                 <li onClick={() => handleMenuClick("kids")}>
-                    <Link to='/kids' style={{ textDecoration: 'none' }}>Kids</Link>
+                    <Link to='/kids' style={{ textDecoration: 'none', color: 'white' }}>KIDS</Link>
                     {menu === "kids" ? <hr /> : null}
                 </li>
             </ul>
+
 
             <div className="nav-login-cart">
                 {localStorage.getItem('auth-token') ? (
