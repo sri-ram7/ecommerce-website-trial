@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    background: #1c1c1c;
     
 }
 
@@ -13,8 +14,12 @@
     gap: 20px;
 }
 
+.footer-social-icon{
+    margin-left: 15px;
+}
+
 .footer-logo p{
-    color: #383838;
+    color: whitesmoke;
     font-size: 46px;
     font-weight: 700;
 }
@@ -23,7 +28,7 @@
     display: flex;
     list-style: none;
     gap: 50px;
-    color: #252525;
+    color: whitesmoke;
     font-size: 20px;
 }
 
@@ -39,8 +44,7 @@
 .footer-icons-container{
     padding: 10px;
     padding-bottom: 6px;
-    background: #fbfbfb;
-    border: 1px solid #ebebeb;
+    background: #1c1c1c;
 }
 
 .footer-copyright{
@@ -50,16 +54,19 @@
     gap: 30px;
     width: 100%;
     margin-bottom: 30px;
-    color: #1a1a1a;
+    color: whitesmoke;
     font-size: 20px;
+    margin-left: 10px;
 }
 
-.footer-copyright hr{
-    width : 80%;
-    border: none;
-    border-radius: 10px;
-    height: 3px;
-    background: #c7c7c7
+.footer-copyright p{
+    margin-top: 11px;
+}
+
+.footer-social-icon img{
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 @media(max-width: 800px){
