@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import logo from '../components/assests/pexels-timotej-284951.jpg';
 import './css/loginsignup.css'; 
 const Loginsignup = () => {
 
@@ -91,7 +92,7 @@ const Loginsignup = () => {
 
 
     return (
-        <div className='loginsignup'>
+        <div className='loginsignup' style={{ backgroundImage: `url(${logo})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="loginsignup-container">
                 <h1>{state}</h1>
                 <div className="loginsignup-fields">
