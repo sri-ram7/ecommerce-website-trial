@@ -4,7 +4,7 @@
     align-items: center;
     gap: 10px;
     height: 90vh;
-    background-color: #080808e8;
+    background: linear-gradient(180deg,#0f0f0f,#1c1c1c 60%);
     color: whitesmoke;
 }
 
@@ -68,6 +68,7 @@
         translate: 0 0;
     }
 }
+
 @media(max-width: 1280px){
     .popular{
         height: 70vh;
