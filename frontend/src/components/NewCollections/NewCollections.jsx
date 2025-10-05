@@ -9,8 +9,13 @@ const Newcollections = (props) => {
   useEffect(() => {
     fetch("https://ecommerce-website-trial-backend.onrender.com/newcollections")
       .then((response) => response.json())
-      .then((data) => setNew_collection(data));
-  }, []);
+      .then((data) => setNew_collection(data))
+      .catch(err => {
+        // handle error state
+        console.error("Error fetching collections", err);
+      });
+}, []);
+
 
   return (
     <div className='new-collections'>
