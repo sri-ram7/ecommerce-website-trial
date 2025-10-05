@@ -1,10 +1,11 @@
 .navbar{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
     position: relative;
+    background-color: black;
 }
 
 .nav-logo{
@@ -14,7 +15,7 @@
 }
 
 .nav-logo p{
-    color: #171717;
+    color: whitesmoke;
     font-size: 38px;
     font-weight: 600;
 }
@@ -26,6 +27,7 @@
     gap: 50px;
     font-size: 20px;
     font-weight: 500;
+    color: white;
 }
 
 .nav-menu li{
@@ -33,11 +35,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: -3px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
     transition: transform 0.3s ease;
     transform: scaleX(1);
+    color: white;
 }
+
+
 
 .nav-menu li:hover{
     transform: scale(1.1);
@@ -66,6 +74,7 @@
     display: flex;
     align-items: center;
     gap: 45px;
+    color: white;
 }
 
 .nav-login-cart button{
@@ -85,6 +94,12 @@
     transform: scaleX(1);
 }
 
+.nav-login-cart img{
+    width: 55px;
+    height: 55px;
+    
+}
+
 .nav-login-cart button:hover{
     transform: scale(1.05);
     background: #ff7700;
@@ -102,9 +117,9 @@
    justify-content: center;
    align-items:center;
    margin-top: -35px; 
-   margin-left: -35px;
+   margin-left: -52px;
    border-radius: 11px;
-   font-size: 16px;
+   font-size: 14px;
    background-color: red;
    color: white;
 }
