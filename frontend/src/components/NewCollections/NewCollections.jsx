@@ -7,16 +7,16 @@ const Newcollections = (props) => {
   const [new_collection, setNew_collection] = useState([]);
 
   useEffect(() => {
-    fetch("https://ecommerce-website-trial-backend.onrender.com/newcollections")
+    fetch("http://localhost:4000/newcollections")
       .then((response) => response.json())
       .then((data) => setNew_collection(data));
   }, []);
 
   return (
     <div className='new-collections'>
-      <h1>NEW COLLECTIONS</h1>
-      <hr/>
-      <div className="collections">
+      <h1 className='autoshow'>New Collections</h1>
+      <hr className='autoshow'/>
+      <div className="collections imagereveal">
         {new_collection.map((item, i) => (
           <Item
             key={item.id}
@@ -25,6 +25,7 @@ const Newcollections = (props) => {
             image={item.image}
             new_price={item.new_price}
             old_price={item.old_price}
+            style={{ color: 'white'}}
           />
         ))}
       </div>
